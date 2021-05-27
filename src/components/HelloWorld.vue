@@ -1,73 +1,224 @@
 <template>
   <v-container>
     <v-row class="text-center">
+      <v-col
+        cols="12"
+      >
+        <v-card>
+          <v-card-title>문화재를 집에서 쉽고 편리하게</v-card-title>
+        </v-card>
+      </v-col>
       <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
-
-      <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
-
-        <p class="subheading font-weight-regular">
-          For help and collaboration with other Vuetify developers,
-          <br />please join our online
-          <a href="https://community.vuetifyjs.com" target="_blank"
-            >Discord Community</a
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/national_treasure/2685609.jpg"
+            width="100%"
+            height="400px"
           >
-        </p>
+            <v-card-title
+              style="color: white;"
+            >국보에 대한 짧은 소개, 국보페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
       </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">What's next?</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(next, i) in whatsNext"
-            :key="i"
-            :href="next.href"
-            class="subheading mx-3"
-            target="_blank"
+      <v-col
+        md="6"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/treasure/1613270.jpg"
+            height="350px"
           >
-            {{ next.text }}
-          </a>
-        </v-row>
+            <v-card-title
+              style="color: white;"
+            >보물에 대한 짧은 소개, 보물페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
       </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">Important Links</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(link, i) in importantLinks"
-            :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
+      <v-col
+        md="6"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/history_site/2016012510442904.JPG"
+            height="350px"
           >
-            {{ link.text }}
-          </a>
-        </v-row>
+          <v-card-title
+            style="color: white;"
+          >사적에 대한 짧은 소개, 사적페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
       </v-col>
-
-      <v-col class="mb-5" cols="12">
-        <h2 class="headline font-weight-bold mb-3">Ecosystem</h2>
-
-        <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/scenic_site/1628680.jpg"
+            height="300px"
           >
-            {{ eco.text }}
-          </a>
-        </v-row>
+          <v-card-title
+            style="color: white;"
+          >명승에 대한 짧은 소개, 명승페이지 이동링크 추가(사적명승 1개밖에 없음)</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/natural_monument/1629429.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >천연기념물에 대한 짧은 소개, 천연기념물페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/imp_intangible_cult_prop/1623133.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >국가무형문화재에 대한 짧은 소개, 국가무형문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="6"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/imp_folklore_material/1633206.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >국가민속문화재에 대한 짧은 소개, 국가민속문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="6"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/tangible_cult_prop/1636083.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >시도유형문화재에 대한 짧은 소개, 시도유형문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/intangible_cult_prop/2018102317520700.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >시도무형문화재에 대한 짧은 소개, 시도무형문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/monument/2018102410005600.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >시도기념물에 대한 짧은 소개, 시도기념물페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/folklore_material/2016012713553502.JPG"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >시도민속문화재에 대한 짧은 소개, 시도무형문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/cultural_material/1659597.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >문화재자료에 대한 짧은 소개, 문화재자료페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/register/1667286.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >등록문화재에 대한 짧은 소개, 등록문화재페이지 이동링크 추가</v-card-title>
+          </v-img>
+        </v-card>
+      </v-col>
+      <v-col
+        md="4"
+        cols="12"
+      >
+        <v-card>
+          <v-img
+            src="http://www.cha.go.kr/unisearch/images/nondesignated_cult_prop/1669629.jpg"
+            height="300px"
+          >
+            <v-card-title
+              style="color: white;"
+            >이북 5도 무형문화재에 대한 짧은 소개, 시도무형문화재페이지 이동링크 추가</v-card-title>
+            <v-card-subtitle>
+              본 저작물은 문화재청에서 2001년 작성하여 공공누리 제4유형으로 개방한 평양검무를 이용하였으며,
+              해당 저작물은 문화재청 http://www.cha.go.kr/unisearch/images/nondesignated_cult_prop/1669629.jpg에서 무료로 다운받으실 수 있습니다.
+            </v-card-subtitle>
+          </v-img>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>
@@ -78,56 +229,7 @@ export default {
   name: "HelloWorld",
 
   data: () => ({
-    ecosystem: [
-      {
-        text: "vuetify-loader",
-        href: "https://github.com/vuetifyjs/vuetify-loader",
-      },
-      {
-        text: "github",
-        href: "https://github.com/vuetifyjs/vuetify",
-      },
-      {
-        text: "awesome-vuetify",
-        href: "https://github.com/vuetifyjs/awesome-vuetify",
-      },
-    ],
-    importantLinks: [
-      {
-        text: "Documentation",
-        href: "https://vuetifyjs.com",
-      },
-      {
-        text: "Chat",
-        href: "https://community.vuetifyjs.com",
-      },
-      {
-        text: "Made with Vuetify",
-        href: "https://madewithvuejs.com/vuetify",
-      },
-      {
-        text: "Twitter",
-        href: "https://twitter.com/vuetifyjs",
-      },
-      {
-        text: "Articles",
-        href: "https://medium.com/vuetify",
-      },
-    ],
-    whatsNext: [
-      {
-        text: "Explore components",
-        href: "https://vuetifyjs.com/components/api-explorer",
-      },
-      {
-        text: "Select a layout",
-        href: "https://vuetifyjs.com/getting-started/pre-made-layouts",
-      },
-      {
-        text: "Frequently Asked Questions",
-        href: "https://vuetifyjs.com/getting-started/frequently-asked-questions",
-      },
-    ],
+
   }),
 };
 </script>
