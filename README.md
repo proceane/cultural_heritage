@@ -21,6 +21,7 @@ https://www.cha.go.kr/html/HtmlPage.do?pg=/publicinfo/pbinfo3_0201.jsp&mn=NS_04_
 |2021.02.28 | 오전에 문화재 이미지, 동영상, 나레이션데이터를 한꺼번에 요청하여 dictionary에 담은후 firebase에 등록하는 코드 작성후 수집 시작, 오후시간 수집완료|
 |2021.05.27| vuetify 프로젝트 세팅, 메인 페이지 레이아웃 구성|
 |2021.05.31| 리스트, 상세페이지 레이아웃 구성|
+|2021.05.31| 소재지 상세, 소유자 데이터 추가|
 
 
 ## Project setup
