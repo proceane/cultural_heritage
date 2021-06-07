@@ -5,8 +5,10 @@ export default {
     })
   },
   getDetail (fb, kdcd, ctcd, asno) {
+    var result
     fb.database().ref('data/' + kdcd + '/' + ctcd + '/' + asno).on('value', (sn) => {
-      console.log(sn.val())
+      result = sn.val()
     })
+    return result
   }
 }
