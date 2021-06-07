@@ -23,6 +23,7 @@ https://www.cha.go.kr/html/HtmlPage.do?pg=/publicinfo/pbinfo3_0201.jsp&mn=NS_04_
 |2021.05.31| 리스트, 상세페이지 레이아웃 구성|
 |2021.05.31| 소재지 상세, 소유자 데이터 추가|
 |2021.06.06| 상세데이터 조회 메소드 추가, 정상조회 확인|
+|2021.06.07| 상세페이지 구현|
 
 
 ## Project setup
