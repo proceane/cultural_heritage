@@ -107,38 +107,6 @@
       <v-col
       cols="12"
       md="9"
-      >
-        <div
-          class="text-subtitle-1 font-weight-bold"
-        >
-        나레이션
-        </div>
-        <v-divider class="mt-2 mb-3"></v-divider>
-        <div class="text-center">
-          <div>
-            <v-btn class="ma-2">
-              <v-img width="32px" height="32px" src="../assets/KR-flag-32.png"></v-img>
-            </v-btn>
-          </div>
-          <v-btn class="ma-2">
-            <v-img width="32px" height="32px" src="../assets/US-flag-32.png"></v-img>
-          </v-btn>
-          <v-btn class="ma-2">
-            <v-img width="32px" height="32px" src="../assets/JP-flag-32.png"></v-img>
-          </v-btn>
-          <v-btn class="ma-2">
-            <v-img width="32px" height="32px" src="../assets/CN-flag-32.png"></v-img>
-          </v-btn>
-        </div>
-        <audio controls class="mt-2 mb-3" style="width: 100%">
-          <source ref="narr_source" src="" type="audio/mpeg">
-        </audio>
-        <script type="application/javascript">
-        </script>
-      </v-col>
-      <v-col
-      cols="12"
-      md="9"
       class="mb-5"
       >
         <div
@@ -175,22 +143,16 @@ export default {
       , result: null
       , loading: true
       , images: []
-      , audio: []
     }
   },
   created () {
     this.result = board.getDetail(this.$firebase, this.$route.query.kdcd, this.$route.query.ctcd, this.$route.query.asno)
     if (this.result !== null && typeof(this.result) !== 'undefined') {
-      console.log(this.result)
+      // console.log(this.result)
       this.loading = false
       this.content = this.result.content
       for (var item in this.result.image) {
         this.images.push(this.result.image[item])
-        // console.log(this.result.image[item])
-      }
-      for (var narr in this.result.audio) {
-        console.log(this.result.audio[narr])
-        this.audio.push(this.result.audio[narr])
       }
     }
   },
