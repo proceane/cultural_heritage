@@ -134,8 +134,11 @@
   </v-container>
 </template>
 <script>
-import board from "../plugins/board"
+import getDetail from "../plugins/detail"
 export default {
+  mounted(){
+    this.getView();
+  },
   data () {
     return {
       content: ""
@@ -145,18 +148,18 @@ export default {
       , images: []
     }
   },
-  created () {
-    this.result = board.getDetail(this.$firebase, this.$route.query.kdcd, this.$route.query.ctcd, this.$route.query.asno)
-    if (this.result !== null && typeof(this.result) !== 'undefined') {
-      // console.log(this.result)
-      this.loading = false
-      this.content = this.result.content
-      for (var item in this.result.image) {
-        this.images.push(this.result.image[item])
+  methods : {
+    async getView() {
+      this.result = await getDetail(this.$firebase, this.$route.query.kdcd, this.$route.query.ctcd, this.$route.query.asno)
+      if (this.result !== null && typeof(this.result) !== 'undefined') {
+        // console.log(this.result)
+        this.loading = false
+        this.content = this.result.content
+        for (var item in this.result.image) {
+          this.images.push(this.result.image[item])
+        }
       }
     }
-  },
-  methods: {
   }
 };
 </script>

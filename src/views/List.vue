@@ -313,7 +313,7 @@
 </template>
 
 <script>
-import board from "../plugins/board"
+import board from "../plugins/list"
 export default {
   data () {
       return {
